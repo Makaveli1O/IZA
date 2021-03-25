@@ -12,13 +12,13 @@ Program je možné spustiť pomocou príkazu swift run proj1 <vstupny_retazec> <
 <vstupny_retazec> - obsahuje jednotlivé symboly oddelené , (čiarkou), napr:
 
 
-# swift run proj1 a,b,c automata.json:
+# swift run proj1 a,b,c automata.json
 vstupný reťazec obsahuje tri symboly,
 
-# swift run proj1 "Prvy,Druhy,Treti,+1š_,Symbol s medzerou" automata.json: 
+# swift run proj1 "Prvy,Druhy,Treti,+1š_,Symbol s medzerou" automata.json
 vstupný reťazec obsahuje päť symbolov,
 
-# swift run proj1 "" automata.json: 
+# swift run proj1 "" automata.json
 vstupný reťazec neobsahuje žiadny symbol.
 
 
