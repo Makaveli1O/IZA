@@ -1,0 +1,901 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"proj1::proj1PackageTests::ProductTarget" /* proj1PackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_82 /* Build configuration list for PBXAggregateTarget "proj1PackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_85 /* PBXTargetDependency */,
+			);
+			name = proj1PackageTests;
+			productName = proj1PackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_38 /* FiniteAutomata.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* FiniteAutomata.swift */; };
+		OBJ_45 /* AstarC2Bstar.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* AstarC2Bstar.swift */; };
+		OBJ_46 /* Astar_Bstar_Cstar.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Astar_Bstar_Cstar.swift */; };
+		OBJ_47 /* CIdentifierAutomata.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* CIdentifierAutomata.swift */; };
+		OBJ_48 /* ExampleFiniteAutomata.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* ExampleFiniteAutomata.swift */; };
+		OBJ_50 /* FiniteAutomata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "proj1::FiniteAutomata::Product" /* FiniteAutomata.framework */; };
+		OBJ_57 /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Simulator.swift */; };
+		OBJ_59 /* FiniteAutomata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "proj1::FiniteAutomata::Product" /* FiniteAutomata.framework */; };
+		OBJ_66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Result.swift */; };
+		OBJ_67 /* RunError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* RunError.swift */; };
+		OBJ_68 /* STDERRStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* STDERRStream.swift */; };
+		OBJ_69 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* main.swift */; };
+		OBJ_71 /* Simulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "proj1::Simulator::Product" /* Simulator.framework */; };
+		OBJ_72 /* FiniteAutomata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "proj1::FiniteAutomata::Product" /* FiniteAutomata.framework */; };
+		OBJ_80 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_91 /* FiniteAutomataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* FiniteAutomataTests.swift */; };
+		OBJ_92 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* XCTestManifests.swift */; };
+		OBJ_93 /* proj1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* proj1Tests.swift */; };
+		OBJ_95 /* MyFiniteAutomatas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "proj1::MyFiniteAutomatas::Product" /* MyFiniteAutomatas.framework */; };
+		OBJ_96 /* Simulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "proj1::Simulator::Product" /* Simulator.framework */; };
+		OBJ_97 /* FiniteAutomata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "proj1::FiniteAutomata::Product" /* FiniteAutomata.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBFEA32F260C732D00E6FD29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "proj1::Simulator";
+			remoteInfo = Simulator;
+		};
+		EBFEA330260C732D00E6FD29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "proj1::FiniteAutomata";
+			remoteInfo = FiniteAutomata;
+		};
+		EBFEA331260C732D00E6FD29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "proj1::FiniteAutomata";
+			remoteInfo = FiniteAutomata;
+		};
+		EBFEA332260C732D00E6FD29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "proj1::FiniteAutomata";
+			remoteInfo = FiniteAutomata;
+		};
+		EBFEA333260C732E00E6FD29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "proj1::MyFiniteAutomatas";
+			remoteInfo = MyFiniteAutomatas;
+		};
+		EBFEA334260C732E00E6FD29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "proj1::proj1";
+			remoteInfo = proj1;
+		};
+		EBFEA335260C732E00E6FD29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "proj1::Simulator";
+			remoteInfo = Simulator;
+		};
+		EBFEA336260C732E00E6FD29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "proj1::FiniteAutomata";
+			remoteInfo = FiniteAutomata;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		OBJ_11 /* AstarC2Bstar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstarC2Bstar.swift; sourceTree = "<group>"; };
+		OBJ_12 /* Astar_Bstar_Cstar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astar_Bstar_Cstar.swift; sourceTree = "<group>"; };
+		OBJ_13 /* CIdentifierAutomata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIdentifierAutomata.swift; sourceTree = "<group>"; };
+		OBJ_14 /* ExampleFiniteAutomata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleFiniteAutomata.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Simulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
+		OBJ_18 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		OBJ_19 /* RunError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunError.swift; sourceTree = "<group>"; };
+		OBJ_20 /* STDERRStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STDERRStream.swift; sourceTree = "<group>"; };
+		OBJ_21 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		OBJ_24 /* FiniteAutomataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiniteAutomataTests.swift; sourceTree = "<group>"; };
+		OBJ_25 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_26 /* proj1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proj1Tests.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* FiniteAutomata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiniteAutomata.swift; sourceTree = "<group>"; };
+		"proj1::FiniteAutomata::Product" /* FiniteAutomata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FiniteAutomata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"proj1::MyFiniteAutomatas::Product" /* MyFiniteAutomatas.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyFiniteAutomatas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"proj1::Simulator::Product" /* Simulator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Simulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"proj1::proj1::Product" /* proj1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = proj1; sourceTree = BUILT_PRODUCTS_DIR; };
+		"proj1::proj1Tests::Product" /* proj1Tests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = proj1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_50 /* FiniteAutomata.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_59 /* FiniteAutomata.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_71 /* Simulator.framework in Frameworks */,
+				OBJ_72 /* FiniteAutomata.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_95 /* MyFiniteAutomatas.framework in Frameworks */,
+				OBJ_96 /* Simulator.framework in Frameworks */,
+				OBJ_97 /* FiniteAutomata.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_10 /* MyFiniteAutomatas */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* AstarC2Bstar.swift */,
+				OBJ_12 /* Astar_Bstar_Cstar.swift */,
+				OBJ_13 /* CIdentifierAutomata.swift */,
+				OBJ_14 /* ExampleFiniteAutomata.swift */,
+			);
+			name = MyFiniteAutomatas;
+			path = Sources/MyFiniteAutomatas;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_15 /* Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* Simulator.swift */,
+			);
+			name = Simulator;
+			path = Sources/Simulator;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_17 /* proj1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* Result.swift */,
+				OBJ_19 /* RunError.swift */,
+				OBJ_20 /* STDERRStream.swift */,
+				OBJ_21 /* main.swift */,
+			);
+			name = proj1;
+			path = ../../../../../../../../Documents/VUTBR/3.year/summer/iza/proj1/Sources/proj1;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_22 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_23 /* proj1Tests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_23 /* proj1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_24 /* FiniteAutomataTests.swift */,
+				OBJ_25 /* XCTestManifests.swift */,
+				OBJ_26 /* proj1Tests.swift */,
+			);
+			name = proj1Tests;
+			path = Tests/proj1Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"proj1::FiniteAutomata::Product" /* FiniteAutomata.framework */,
+				"proj1::Simulator::Product" /* Simulator.framework */,
+				"proj1::MyFiniteAutomatas::Product" /* MyFiniteAutomatas.framework */,
+				"proj1::proj1::Product" /* proj1 */,
+				"proj1::proj1Tests::Product" /* proj1Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_22 /* Tests */,
+				OBJ_27 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* FiniteAutomata */,
+				OBJ_10 /* MyFiniteAutomatas */,
+				OBJ_15 /* Simulator */,
+				OBJ_17 /* proj1 */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* FiniteAutomata */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* FiniteAutomata.swift */,
+			);
+			name = FiniteAutomata;
+			path = Sources/FiniteAutomata;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"proj1::FiniteAutomata" /* FiniteAutomata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_34 /* Build configuration list for PBXNativeTarget "FiniteAutomata" */;
+			buildPhases = (
+				OBJ_37 /* Sources */,
+				OBJ_39 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FiniteAutomata;
+			productName = FiniteAutomata;
+			productReference = "proj1::FiniteAutomata::Product" /* FiniteAutomata.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"proj1::MyFiniteAutomatas" /* MyFiniteAutomatas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_41 /* Build configuration list for PBXNativeTarget "MyFiniteAutomatas" */;
+			buildPhases = (
+				OBJ_44 /* Sources */,
+				OBJ_49 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_51 /* PBXTargetDependency */,
+			);
+			name = MyFiniteAutomatas;
+			productName = MyFiniteAutomatas;
+			productReference = "proj1::MyFiniteAutomatas::Product" /* MyFiniteAutomatas.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"proj1::Simulator" /* Simulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_53 /* Build configuration list for PBXNativeTarget "Simulator" */;
+			buildPhases = (
+				OBJ_56 /* Sources */,
+				OBJ_58 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_60 /* PBXTargetDependency */,
+			);
+			name = Simulator;
+			productName = Simulator;
+			productReference = "proj1::Simulator::Product" /* Simulator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"proj1::SwiftPMPackageDescription" /* proj1PackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_76 /* Build configuration list for PBXNativeTarget "proj1PackageDescription" */;
+			buildPhases = (
+				OBJ_79 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = proj1PackageDescription;
+			productName = proj1PackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"proj1::proj1" /* proj1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_62 /* Build configuration list for PBXNativeTarget "proj1" */;
+			buildPhases = (
+				OBJ_65 /* Sources */,
+				OBJ_70 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_73 /* PBXTargetDependency */,
+				OBJ_74 /* PBXTargetDependency */,
+			);
+			name = proj1;
+			productName = proj1;
+			productReference = "proj1::proj1::Product" /* proj1 */;
+			productType = "com.apple.product-type.tool";
+		};
+		"proj1::proj1Tests" /* proj1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_87 /* Build configuration list for PBXNativeTarget "proj1Tests" */;
+			buildPhases = (
+				OBJ_90 /* Sources */,
+				OBJ_94 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_98 /* PBXTargetDependency */,
+				OBJ_99 /* PBXTargetDependency */,
+				OBJ_100 /* PBXTargetDependency */,
+				OBJ_101 /* PBXTargetDependency */,
+			);
+			name = proj1Tests;
+			productName = proj1Tests;
+			productReference = "proj1::proj1Tests::Product" /* proj1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "proj1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"proj1::FiniteAutomata" /* FiniteAutomata */,
+				"proj1::MyFiniteAutomatas" /* MyFiniteAutomatas */,
+				"proj1::Simulator" /* Simulator */,
+				"proj1::proj1" /* proj1 */,
+				"proj1::SwiftPMPackageDescription" /* proj1PackageDescription */,
+				"proj1::proj1PackageTests::ProductTarget" /* proj1PackageTests */,
+				"proj1::proj1Tests" /* proj1Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_38 /* FiniteAutomata.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_45 /* AstarC2Bstar.swift in Sources */,
+				OBJ_46 /* Astar_Bstar_Cstar.swift in Sources */,
+				OBJ_47 /* CIdentifierAutomata.swift in Sources */,
+				OBJ_48 /* ExampleFiniteAutomata.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_57 /* Simulator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_66 /* Result.swift in Sources */,
+				OBJ_67 /* RunError.swift in Sources */,
+				OBJ_68 /* STDERRStream.swift in Sources */,
+				OBJ_69 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_80 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_91 /* FiniteAutomataTests.swift in Sources */,
+				OBJ_92 /* XCTestManifests.swift in Sources */,
+				OBJ_93 /* proj1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_100 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "proj1::Simulator" /* Simulator */;
+			targetProxy = EBFEA335260C732E00E6FD29 /* PBXContainerItemProxy */;
+		};
+		OBJ_101 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "proj1::FiniteAutomata" /* FiniteAutomata */;
+			targetProxy = EBFEA336260C732E00E6FD29 /* PBXContainerItemProxy */;
+		};
+		OBJ_51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "proj1::FiniteAutomata" /* FiniteAutomata */;
+			targetProxy = EBFEA332260C732D00E6FD29 /* PBXContainerItemProxy */;
+		};
+		OBJ_60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "proj1::FiniteAutomata" /* FiniteAutomata */;
+			targetProxy = EBFEA330260C732D00E6FD29 /* PBXContainerItemProxy */;
+		};
+		OBJ_73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "proj1::Simulator" /* Simulator */;
+			targetProxy = EBFEA32F260C732D00E6FD29 /* PBXContainerItemProxy */;
+		};
+		OBJ_74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "proj1::FiniteAutomata" /* FiniteAutomata */;
+			targetProxy = EBFEA331260C732D00E6FD29 /* PBXContainerItemProxy */;
+		};
+		OBJ_85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "proj1::proj1Tests" /* proj1Tests */;
+			targetProxy = "proj1::proj1Tests" /* proj1Tests */;
+		};
+		OBJ_98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "proj1::MyFiniteAutomatas" /* MyFiniteAutomatas */;
+			targetProxy = EBFEA333260C732E00E6FD29 /* PBXContainerItemProxy */;
+		};
+		OBJ_99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "proj1::proj1" /* proj1 */;
+			targetProxy = EBFEA334260C732E00E6FD29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = proj1.xcodeproj/FiniteAutomata_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = FiniteAutomata;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = FiniteAutomata;
+			};
+			name = Debug;
+		};
+		OBJ_36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = proj1.xcodeproj/FiniteAutomata_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = FiniteAutomata;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = FiniteAutomata;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = proj1.xcodeproj/MyFiniteAutomatas_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = MyFiniteAutomatas;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = MyFiniteAutomatas;
+			};
+			name = Debug;
+		};
+		OBJ_43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = proj1.xcodeproj/MyFiniteAutomatas_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = MyFiniteAutomatas;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = MyFiniteAutomatas;
+			};
+			name = Release;
+		};
+		OBJ_54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = proj1.xcodeproj/Simulator_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Simulator;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Simulator;
+			};
+			name = Debug;
+		};
+		OBJ_55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = proj1.xcodeproj/Simulator_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Simulator;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Simulator;
+			};
+			name = Release;
+		};
+		OBJ_63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = proj1.xcodeproj/proj1_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = proj1;
+			};
+			name = Debug;
+		};
+		OBJ_64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = proj1.xcodeproj/proj1_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = proj1;
+			};
+			name = Release;
+		};
+		OBJ_77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 4.2.0";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 4.2.0";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		OBJ_83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = proj1.xcodeproj/proj1Tests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = proj1Tests;
+			};
+			name = Debug;
+		};
+		OBJ_89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = proj1.xcodeproj/proj1Tests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = proj1Tests;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "proj1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_34 /* Build configuration list for PBXNativeTarget "FiniteAutomata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_35 /* Debug */,
+				OBJ_36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_41 /* Build configuration list for PBXNativeTarget "MyFiniteAutomatas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_42 /* Debug */,
+				OBJ_43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_53 /* Build configuration list for PBXNativeTarget "Simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_54 /* Debug */,
+				OBJ_55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_62 /* Build configuration list for PBXNativeTarget "proj1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_63 /* Debug */,
+				OBJ_64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_76 /* Build configuration list for PBXNativeTarget "proj1PackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_77 /* Debug */,
+				OBJ_78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_82 /* Build configuration list for PBXAggregateTarget "proj1PackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_83 /* Debug */,
+				OBJ_84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_87 /* Build configuration list for PBXNativeTarget "proj1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_88 /* Debug */,
+				OBJ_89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
