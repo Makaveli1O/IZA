@@ -38,10 +38,18 @@ public struct Simulator {
             }
             return answer
         }
+        //check undefined states
+        if isStateDefined() != 0 {
+            return ["-21"]
+        }
         
+        //check undefined symbols
+        
+        if isSymbolDefined() != 0 {
+            return ["-22"]
+        }
         var actualState = self.finiteAutomata.initialState
         simulateStep(actualState: &actualState, actualSymbol: &actualSymbol, symbolsArray: &symbolsArray,answerArr: &answer,finalState: &finalState, initial: true)
-        
         
         if finiteAutomata.finalStates.contains(finalState){
             answer.forEach { line in
@@ -54,6 +62,74 @@ public struct Simulator {
         
         
     }
+    //MARK: -isDefined
+    /// - Returns: 0 if OK, -1 otherwise
+    func isStateDefined()->Int{
+        for state in finiteAutomata.states{
+            if finiteAutomata.transitions.filter({$0.from == state}).count == 0 && finiteAutomata.transitions.filter({$0.to == state}).count == 0{
+                return -1
+            }
+        }
+        for transition in finiteAutomata.transitions {
+            if !finiteAutomata.states.contains(transition.from) || !finiteAutomata.states.contains(transition.to){
+                return -1
+            }
+        }
+        return 0 //everything ok
+    }
+    
+    //MARK: -isSymbolDefined
+    /// - Returns: 0 if OK, -1 otherwise
+    func isSymbolDefined() -> Int {
+        for symbol in finiteAutomata.symbols{
+            if finiteAutomata.transitions.filter({$0.with == symbol}).count == 0{
+                return -1
+            }
+        }
+        for transition in finiteAutomata.transitions {
+            if !finiteAutomata.symbols.contains(transition.with){
+                return -1
+            }
+        }
+        return 0 //everything ok
+    }
+    
+    //MARK: -isMultiplePath
+    /// - Parameter actualState: actual state being processed
+    /// - Parameter actualSymbol: actual symbol being processed
+    /// - Returns: Returns number of possible paths from current state
+    public func isMultiplePath(actualState:String,actualSymbol:String)->Int{
+        var count = 0
+        for transition in finiteAutomata.transitions{
+            if transition.from==actualState && transition.with==actualSymbol {
+                    count+=1
+            }
+        }
+        return count
+    }
+    //MARK: detectSink
+    /// - Parameter actualState: actual state being processed
+    /// - Parameter actualSymbol: actual symbol being processed
+    /// - Returns: array of sink states
+    public func detectSink(actualState:String,actualSymbol:String)->[String]{
+        var nextStates:[String] = []
+        for transition in finiteAutomata.transitions{
+            if transition.from==actualState && transition.with==actualSymbol {
+                nextStates.append(transition.to)
+            }
+        }
+        //look for next FROM with nextStates
+        for transition in finiteAutomata.transitions {
+            for state in nextStates{
+                if transition.from == state {
+                    if let firstIndex = nextStates.firstIndex(of: state){
+                        nextStates.remove(at: firstIndex)
+                    }
+                }
+            }
+         }
+        return nextStates
+    }
     ///Sne step of simulation
     //MARK: - simulateStep(singleStep)
     ///- Parameter actualState: actual state within automata
@@ -65,8 +141,17 @@ public struct Simulator {
     ///- Recurisvely called function representing single step of automata
     public func simulateStep(actualState: inout String, actualSymbol:inout String, symbolsArray: inout [Substring], answerArr:inout[String],finalState:inout String, initial: Bool = false)->Void{
         answerArr.append(actualState)
+        
+        //detect multipath
+        let isMultiple = isMultiplePath(actualState: actualState, actualSymbol: actualSymbol) > 1 ? true : false
+        // if multiple paths were found, find sink path
+        var sinkStates:[String] = []
+        if isMultiple {
+            sinkStates.append(contentsOf: detectSink(actualState: actualState, actualSymbol:actualSymbol))
+        }
         for transition in finiteAutomata.transitions {
-            if transition.from == actualState && transition.with == actualSymbol && transition.to != "Sink" {
+            if transition.from == actualState && transition.with == actualSymbol && !sinkStates.contains(transition.to) {
+                //last element
                 if symbolsArray.isEmpty{
                     answerArr.append(transition.to)
                     finalState = transition.to
@@ -78,6 +163,7 @@ public struct Simulator {
                 simulateStep(actualState: &state, actualSymbol: &newSymbol, symbolsArray: &symbolsArray, answerArr: &answerArr, finalState: &finalState)
             }
         }
+        
         return
     }
 }

@@ -41,7 +41,12 @@ func main() -> Result<Void, RunError> {
 
         let sim = Simulator(finiteAutomata: f)
         let answer = sim.simulate(on: inputString)
-        if answer.isEmpty {
+        
+        if answer.contains("-21"){
+            return .failure(.unknownState)
+        }else if answer.contains("-22"){
+            return .failure(.unknownSymbol)
+        }else if answer.isEmpty {
             return .failure(.notAccepted)
         }
     } catch {
