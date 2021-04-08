@@ -24,7 +24,7 @@ public struct Simulator {
     ///     otherwise array of states
     public func simulate(on string: String) -> [String] {
         var answer : [String] = []
-        var finalState:String = ""
+        var finalStates:[String] = []
         var symbolsArray = string.split(separator: ",")
         //assign and pop(empty element)
         var actualSymbol:String
@@ -49,18 +49,18 @@ public struct Simulator {
             return ["-22"]
         }
         var actualState = self.finiteAutomata.initialState
-        simulateStep(actualState: &actualState, actualSymbol: &actualSymbol, symbolsArray: &symbolsArray,answerArr: &answer,finalState: &finalState, initial: true)
-        
-        if finiteAutomata.finalStates.contains(finalState){
-            answer.forEach { line in
-                print("\(line)")
-            }
+        simulateStep(actualState: &actualState, actualSymbol: &actualSymbol, symbolsArray: &symbolsArray,answerArr: &answer,finalStates: &finalStates, initial: true)
+        //check final states
+        for finalState in finalStates {
+            if finiteAutomata.finalStates.contains(finalState){
+                answer.forEach { line in
+                    print("\(line)")
+                }
             return answer
-        }else{
-            return []
+            }
         }
-        
-        
+        //answer not found
+        return []
     }
     //MARK: -isDefined
     /// - Returns: 0 if OK, -1 otherwise
@@ -128,6 +128,16 @@ public struct Simulator {
                 }
             }
          }
+        //check if sink states aren't actually final states <PATCH>
+        for finalState in finiteAutomata.finalStates {
+            for state in nextStates{
+                if finalState == state{
+                    if let firstIndex = nextStates.firstIndex(of: state){
+                        nextStates.remove(at: firstIndex)
+                    }
+                }
+            }
+        }
         return nextStates
     }
     ///Sne step of simulation
@@ -136,10 +146,10 @@ public struct Simulator {
     ///- Parameter actualySymbol: processing symbol from given string
     ///- Parameter symbolsArray: remaining symbols
     ///- Parameter answerArr: array holding answered states
-    ///- Parameter finalState: final state( to check if last state was actually final state
+    ///- Parameter finalStates: final states( to check if last state was actually final state)
     ///- Parameter initial: bool  representing first call
     ///- Recurisvely called function representing single step of automata
-    public func simulateStep(actualState: inout String, actualSymbol:inout String, symbolsArray: inout [Substring], answerArr:inout[String],finalState:inout String, initial: Bool = false)->Void{
+    public func simulateStep(actualState: inout String, actualSymbol:inout String, symbolsArray: inout [Substring], answerArr:inout[String],finalStates:inout [String], initial: Bool = false, processedStates:[String] = [])->Void{
         answerArr.append(actualState)
         
         //detect multipath
@@ -149,21 +159,36 @@ public struct Simulator {
         if isMultiple {
             sinkStates.append(contentsOf: detectSink(actualState: actualState, actualSymbol:actualSymbol))
         }
+        //store next states for each symbol
+        var nextStates:[String] = []
+        for transition in finiteAutomata.transitions{
+            if transition.from == actualState && transition.with == actualSymbol && !sinkStates.contains(transition.to) {
+                nextStates.append(transition.to)
+            }
+        }
+        
         for transition in finiteAutomata.transitions {
             if transition.from == actualState && transition.with == actualSymbol && !sinkStates.contains(transition.to) {
+                
                 //last element
                 if symbolsArray.isEmpty{
-                    answerArr.append(transition.to)
-                    finalState = transition.to
+                    //no sink detected, but still multiple states were found
+                    if !nextStates.isEmpty {
+                        if finiteAutomata.finalStates.contains(transition.to) {
+                            answerArr.append(transition.to)
+                            nextStates.remove(at: 0)
+                            finalStates.append(transition.to)
+                            continue
+                        }else{continue}
+                    }
                     return
                 }
                 var newSymbol = String(symbolsArray[0])
                 symbolsArray.remove(at: 0)
                 var state = transition.to
-                simulateStep(actualState: &state, actualSymbol: &newSymbol, symbolsArray: &symbolsArray, answerArr: &answerArr, finalState: &finalState)
+                simulateStep(actualState: &state, actualSymbol: &newSymbol, symbolsArray: &symbolsArray, answerArr: &answerArr, finalStates: &finalStates)
             }
         }
-        
         return
     }
 }

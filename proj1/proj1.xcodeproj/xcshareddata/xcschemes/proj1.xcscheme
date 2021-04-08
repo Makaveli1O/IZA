@@ -62,11 +62,11 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "a,b,c"
+            argument = "&quot;a&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/Users/makaveli_10/documents/vutbr/3.year/summer/iza/testAutomata.json"
+            argument = "/Users/makaveli_10/documents/vutbr/3.year/summer/iza/automata4.json"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
