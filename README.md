@@ -1,4 +1,4 @@
-# IZA
+# IZA 8/10
 Programování zařízení Apple
 
 
